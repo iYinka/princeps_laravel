@@ -93,8 +93,14 @@
                                             <h2 class="text-xl font-semibold text-black dark:text-white">Documentation</h2>
 
                                             <p class="mt-4 text-sm/relaxed">
-                                                Laravel has wonderful documentation covering every aspect of the framework. Whether you are a newcomer or have prior experience with Laravel, we recommend reading our documentation from beginning to end.
-                                            </p>
+The Princeps Credit Systems Limited is a subsidiary of Princeps Holdings
+Limited.
+
+Today, it is positioned to become Africa’s foremost provider in consumer
+financial services, with one of its product being Creditwallet, a brand with
+a vision to make borrowing experience stress-free for every salaried
+worker in Africa by providing quick and easy access to loans with high
+quality service                                            </p>
                                         </div>
                                     </div>
 
