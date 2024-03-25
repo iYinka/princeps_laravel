@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'default' => env('MAIL_MAILER', 'log'),
+    'default' => array_key_exists('MAIL_MAILER', $_SERVER) ? $_SERVER['MAIL_MAILER'] : env('MAIL_MAILER'),
 
     /*
     |--------------------------------------------------------------------------
@@ -38,12 +38,12 @@ return [
 
         'smtp' => [
             'transport' => 'smtp',
-            'url' => env('MAIL_URL'),
-            'host' => env('MAIL_HOST', '127.0.0.1'),
-            'port' => env('MAIL_PORT', 2525),
-            'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-            'username' => env('MAIL_USERNAME'),
-            'password' => env('MAIL_PASSWORD'),
+//             'url' => env('MAIL_URL'),
+            'host' => array_key_exists('MAIL_HOST', $_SERVER) ? $_SERVER['MAIL_HOST'] : env('MAIL_HOST'),
+            'port' => array_key_exists('MAIL_PORT', $_SERVER) ? $_SERVER['MAIL_PORT'] : env('MAIL_PORT'),
+            'encryption' => array_key_exists('MAIL_ENCRYPTION', $_SERVER) ? $_SERVER['MAIL_ENCRYPTION'] : env('MAIL_ENCRYPTION'),
+            'username' => array_key_exists('MAIL_USERNAME', $_SERVER) ? $_SERVER['MAIL_USERNAME'] : env('MAIL_USERNAME'),
+            'password' => array_key_exists('MAIL_PASSWORD', $_SERVER) ? $_SERVER['MAIL_PASSWORD'] : env('MAIL_PASSWORD'),
             'timeout' => null,
             'local_domain' => env('MAIL_EHLO_DOMAIN'),
         ],
